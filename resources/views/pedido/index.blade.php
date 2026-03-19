@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    @extends('layout.app')
+    @extends('layouts.app')
     @section('content')
 
     <h1>PEDIDOS REGISTRADOS</h1>  

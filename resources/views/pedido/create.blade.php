@@ -6,7 +6,7 @@
     <title>Registrar pedido</title>
 </head>
 <body>
-    @extends('layout.app')
+    @extends('layouts.app')
     @section('content')
     <h1>REGISTRAR PEDIDO</h1>
 
