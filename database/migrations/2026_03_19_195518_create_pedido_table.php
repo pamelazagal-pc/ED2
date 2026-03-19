@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('pedido', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('platillos del pedido');
+            $table->string('mesa de la orden');
+            $table->string('tipo de pago');
+            $table->string('numero de pedido');
+            $table->doble('total');
+
         });
     }
 
