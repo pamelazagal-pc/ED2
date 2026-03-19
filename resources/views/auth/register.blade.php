@@ -43,7 +43,11 @@
         
         <br>
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Guardar </button>
-    
+
+        <br>
+            <a href="{{ route('acceso') }}" class="btn btn-secondary mt-2">
+                <i class="fa-solid fa-arrow-left"></i> Volver al inicio de sesión
+            </a>
     </form>
 
     @endsection

@@ -44,7 +44,7 @@
                 <td>{{ $pedido->platillo }}</td>
                 <td>{{ $pedido->mesa }}</td>
                 <td>${{ $pedido->tipoPago }}</td>
-                <td>{{ $pedido->numeroMesa }}</td>
+                <td>{{ $pedido->numeroPedido }}</td>
                 <td>{{ $pedido->total }}</td>
                 <td>
                     <a href="{{ route('pedido.edit', $pedido->id) }}" class="btn btn-warning">

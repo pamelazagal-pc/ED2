@@ -39,10 +39,12 @@
             <input type="text" class="form-control" name="numeroPedido" placeholder="Número de Pedido">
         </div>
         
+        <a href="{{ route('pedido.index') }}" class="btn btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i> Volver
+        </a>
+        <button type="submit" class="btn btn-success">
+            <i class="fa-solid fa-floppy-disk"></i> Guardar
         
-        <button type="submit" class="btn btn-outline-primary">
-        <i class="fa-solid fa-floppy-disk"></i> Guardar
-        </button>
 
 
     </form>

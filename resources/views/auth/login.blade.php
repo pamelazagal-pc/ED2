@@ -21,6 +21,10 @@
         <br>
 
         <button type="submit" class="btn btn-success"> Iniciar Sesión </button>
+        <br>
+        <a href="{{ route('registro.store') }}" class="btn btn-secondary mt-2">
+            <i class="fa-solid fa-user-plus"></i> Registrarse
+        </a>
     
     </form>
 
