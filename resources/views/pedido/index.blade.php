@@ -23,6 +23,12 @@
             @csrf
             <button class="btn btn-danger">Cerrar sesión</button>
         </form>
+        
+        @if(auth()->user()->is_admin)
+            <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary mb-3">
+                Panel Admin
+            </a>
+        @endif        
 
     </div>
     <table border="1" class="table table-striped table-hover">
