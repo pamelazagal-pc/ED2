@@ -23,7 +23,7 @@
             @csrf
             <button class="btn btn-danger">Cerrar sesión</button>
         </form>
-        
+
         @if(auth()->user()->is_admin)
             <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary mb-3">
                 Panel Admin
@@ -57,12 +57,16 @@
                         <i class="fa-solid fa-pen-to-square"></i>
                     </a>
                     <!-- Formulario para eliminar -->
-                    <form action="{{ route('pedido.destroy', $pedido->id) }}" method="POST" style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button class="btn btn-danger" onclick="return confirm('¿Eliminar registro?')" type="submit">
-                            <i class="fa-solid fa-trash"></i>
-                        </button>
+                    @auth
+                        @if(auth()->user()->is_admin) 
+                            <form action="{{ route('pedido.destroy', $pedido->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger" onclick="return confirm('¿Eliminar registro?')" type="submit">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                          @endif
+                    @endauth
                 </td>
                 
             </tr>
