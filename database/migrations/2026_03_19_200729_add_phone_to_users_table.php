@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pedido', function (Blueprint $table) {
-            $table->id();
-            $table->string('platillo');
-            $table->string('mesa');
-            $table->string('tipoPago');
-            $table->string('numeroMesa');
-            $table->doble('total');
-
+        Schema::table('users', function (Blueprint $table) {
+            //
         });
     }
 
@@ -27,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pedido');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 };
