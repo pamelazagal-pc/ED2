@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 use Illuminate\Support\Facades\Auth;
 
-class VerificarUsuario
+class verificarUsuario
 {
     /**
      * Handle an incoming request.
