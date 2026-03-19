@@ -22,10 +22,13 @@
 
         <button type="submit" class="btn btn-success"> Iniciar Sesión </button>
         <br>
-        <a href="{{ route('registro.store') }}" class="btn btn-secondary mt-2">
-            <i class="fa-solid fa-user-plus"></i> Registrarse
-        </a>
     
+    
+    </form>
+
+        <form action="{{route ('registro.store')}}">
+        <button type="submit" class="btn btn-success m-3">Registrarse</button>
+
     </form>
 
     @endsection

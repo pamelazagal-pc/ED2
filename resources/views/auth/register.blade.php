@@ -36,10 +36,14 @@
         <input type="password" name="password_confirmation" placeholder="Confirmar Contraseña" class="form-control" required>
         <br>
 
-        <div class="form-check">
-            <input type="checkbox" name="is_admin" value="1">
-            <label >Es administrador</label>
-        </div>
+        @auth
+            @if(auth()->user()->is_admin)    
+                <div class="form-check">
+                    <input type="checkbox" name="is_admin" value="1">
+                    <label >Es administrador</label>
+                </div>
+            @endif
+        @endauth
         
         <br>
         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Guardar </button>
