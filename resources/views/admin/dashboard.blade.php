@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    @extends('layout.app')
+    @extends('layouts.app')
     @section('content')
         <h1>Panel admin</h1>
         <form action="{{route ('registro.store')}}">
