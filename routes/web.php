@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\PedidoController;
+use App\Http\Controllers\pedidoController;
 
 
 Route::get('/', function () {
@@ -12,10 +12,10 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::resource('pedido', comidaController::class);
+    Route::resource('pedido', pedidoController::class);
 });
 
-Rout::get('registro', [
+Route::get('registro', [
     AuthController::class, 'registerForm'
 ])->name('registro');
 
