@@ -18,7 +18,7 @@
         <input type="text" name="name" placeholder="Nombre" class="form-control" required>
         <br>
 
-        <input type="text" name="age" placeholder="Edad" class="form-control" required>
+        <input type="text" name="edad" placeholder="Edad" class="form-control" required>
         <br>
 
         <input type="email" name="email" placeholder="Correo Electrónico" class="form-control" required>
@@ -27,7 +27,7 @@
         <input type="text" name="phone" placeholder="Teléfono" class="form-control" required>
         <br>
 
-        <input type="text" name="direction" placeholder="Dirección" class="form-control" required>
+        <input type="text" name="direccion" placeholder="Dirección" class="form-control" required>
         <br>
 
         <input type="password" name="password" placeholder="Contraseña" class="form-control" required>
