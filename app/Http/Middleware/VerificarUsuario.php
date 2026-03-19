@@ -24,10 +24,10 @@ class VerificarUsuario
         }
         
         //Verificar que la sesión sea de un administrador
-        if(!Auth::user()->is_admin){
-            return redirect()-> route('pedido.index')
-            ->with('error', 'No tienes permisos para acceder a esta página.');
-        }
+        //if(!Auth::user()->is_admin){
+           // return redirect()-> route('pedido.index')
+            //->with('error', 'No tienes permisos para acceder a esta página.');
+        //}
 
         //NO BORRAR
         return $next($request);

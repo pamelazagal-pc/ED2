@@ -23,8 +23,8 @@ class AdminMiddleware
         }
 
         //Verificar que la sesión sea de un administrador
-        if(!Auth::user()){
-            return redirect()-> route('pedido.index')
+        if(!Auth::user()->is_admin){
+            return redirect()-> route('acceso')
             ->with('error', 'No tienes permisos para acceder a esta página.');
         }
         return $next($request);
