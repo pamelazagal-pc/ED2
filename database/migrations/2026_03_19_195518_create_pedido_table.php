@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('platillo');
             $table->string('mesa');
             $table->string('tipoPago');
-            $table->string('numeroMesa');
-            $table->doble('total');
-
+            $table->string('numeroPedido');
+            $table->double('total');
+            $table->timestamps();
         });
     }
 
