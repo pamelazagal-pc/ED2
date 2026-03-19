@@ -46,14 +46,7 @@
                 <td>${{ $pedido->tipoPago }}</td>
                 <td>{{ $pedido->numeroMesa }}</td>
                 <td>{{ $pedido->total }}</td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-
-    @endsection
-</body>
-</html>
+                <td>
                     <a href="{{ route('pedido.edit', $pedido->id) }}" class="btn btn-warning">
                         <i class="fa-solid fa-pen-to-square"></i>
                     </a>
@@ -64,6 +57,8 @@
                         <button class="btn btn-danger" onclick="return confirm('¿Eliminar registro?')" type="submit">
                             <i class="fa-solid fa-trash"></i>
                         </button>
+                </td>
+                
             </tr>
             @endforeach
         </tbody>
