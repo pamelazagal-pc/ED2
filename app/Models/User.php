@@ -26,6 +26,7 @@ class User extends Authenticatable
         'is_admin',
         'email',
         'password',
+        'is_admin',
     ];
 
     protected $casts = [
