@@ -25,7 +25,7 @@ class AuthController extends Controller
             'password' => 'required|min:8|confirmed'
         ]);
 
-                //si todo ta bien ya abre cambiado lo de  y esto de aqui es la logica de seguridad para lo del campo de admin
+        //si todo ta bien ya abre cambiado lo de  y esto de aqui es la logica de seguridad para lo del campo de admin
         //y con esto ya solo si  el usuario es autenticado y es admin va a poder asignar el  rol de admin a otro ... si todo sale bien ps
 
         $isAdminValue = false;
@@ -45,7 +45,7 @@ class AuthController extends Controller
 
         if (!Auth::check()) {
             Auth::login($user);
-            return redirect()->route('comida.index');
+            return redirect()->route('pedido.index');
         }
             return redirect()->route('admin.dashboard')->with('success', 'Usuario registrado correctamente.');
     }
@@ -56,7 +56,7 @@ class AuthController extends Controller
     }
     
 
-        //metodo para iniciar sesion
+    //metodo para iniciar sesion
     public function login(Request $request)
     {
         //validar datos en el formulario

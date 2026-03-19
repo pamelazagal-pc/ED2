@@ -20,9 +20,9 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'age',
+        'edad',
         'phone',
-        'direction',
+        'direccion',
         'is_admin',
         'email',
         'password',
@@ -31,7 +31,7 @@ class User extends Authenticatable
     protected $casts = [
         'is_admin' => 'boolean',
     ];
-    
+
     /**
      * The attributes that should be hidden for serialization.
      *
