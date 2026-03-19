@@ -24,7 +24,7 @@ class AdminMiddleware
 
         //Verificar que la sesión sea de un administrador
         if(!Auth::user()){
-            return redirect()-> route('libros.index')
+            return redirect()-> route('pedido.index')
             ->with('error', 'No tienes permisos para acceder a esta página.');
         }
         return $next($request);
