@@ -10,7 +10,7 @@
     @extends('layouts.app')
     @section('content')
 
-    <h1>REGISTRO DE USUARIO</h1>
+    <h1>REGISTRO DE PERSONAL</h1>
 
     <form action="{{ route('registro.store') }}" method="POST">
         @csrf
@@ -18,10 +18,16 @@
         <input type="text" name="name" placeholder="Nombre" class="form-control" required>
         <br>
 
+        <input type="text" name="age" placeholder="Edad" class="form-control" required>
+        <br>
+
         <input type="email" name="email" placeholder="Correo Electrónico" class="form-control" required>
         <br>
 
         <input type="text" name="phone" placeholder="Teléfono" class="form-control" required>
+        <br>
+
+        <input type="text" name="direction" placeholder="Dirección" class="form-control" required>
         <br>
 
         <input type="password" name="password" placeholder="Contraseña" class="form-control" required>
