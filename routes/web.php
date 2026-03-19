@@ -15,6 +15,12 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('pedido', pedidoController::class);
 });
 
+Route::get('index', [
+    AuthController::class, 'index'
+])->name('index');
+
+
+
 Route::get('registro', [
     AuthController::class, 'registerForm'
 ])->name('registro');
